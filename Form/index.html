@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <div>
+      <form action="result.html">
+        <div>
+          <label for="ad">ADI</label>
+          <input id="ad" type="text" name="isim" value="" required />
+
+          <br />
+          <br />
+          <label for="soyad">SOYADI</label>
+          <input id="soyad" type="text" name="soyisim" value="" />
+          <br />
+          <br />
+        </div>
+
+        <div>
+          <label>CİNSİYET</label>
+
+          <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
+          <label for="erkek">Bay</label>
+
+          <input type="radio" name="cinsiyet" id="kadın" value="kadın" />
+          <label for="kadın">Bayan</label>
+        </div>
+        <br />
+
+        <div>
+          <label for="ilce">ILCE</label>
+          <select name="ilce" id="ilce">
+            <option value=""></option>
+            <option value="Osmangazi">Osmangazi</option>
+            <option value="Orhangazi">Orhangazi</option>
+            <option value="Tepebasi">Tepebasi</option>
+          </select>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="tel">TELEFON</label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+        <br />
+
+        <div>
+          <label for="">HOBILERIM</label>
+
+          <input
+            id="futbol"
+            type="checkbox"
+            name="spor1"
+            value="futbol"
+          /><br />
+          <label for="futbol">FUTBOL</label>
+
+          <input
+            id="voleybol"
+            type="checkbox"
+            name="spor2"
+            value="voleybol"
+          /><br />
+          <label for="voleybol">VOLEYBOL</label>
+
+          <input
+            id="basketbol"
+            type="checkbox"
+            name="spor3"
+            value="basketbol"
+          /><br />
+          <label for="basketbol">BASKETBOL</label>
+        </div>
+        <br />
+
+        <div>
+          <label for="tarih">DOGUM TARİHI</label>
+          <input type="date" name="tarih" id="tarih" />
+        </div>
+        <br />
+
+        <div>
+          <label for="adres">ADRES</label>
+          <textarea
+            name="adres"
+            id="adres"
+            cols="20"
+            rows="5"
+            style="resize: none"
+          ></textarea>
+        </div>
+        <br />
+
+        <div>
+          <input type="button" value="Kayit ol" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>

@@ -5,103 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <style>
+      .labelName {
+        width: 200px;
+      }
+
+      .inputValue {
+        width: 300px;
+      }
+
+      .divinfo {
+        display: flex;
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <h1>Form</h1>
-    <div>
-      <form action="result.html">
-        <div>
-          <label for="ad">ADI</label>
-          <input id="ad" type="text" name="isim" value="" required />
 
-          <br />
-          <br />
-          <label for="soyad">SOYADI</label>
-          <input id="soyad" type="text" name="soyisim" value="" />
-          <br />
-          <br />
+    <div class="divinfo">
+      <div class="labelName"><label for="ad">ADI</label></div>
+      <div class="inputValue">
+        <input id="ad" type="text" name="isim" value="" required />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName"><label for="soyad">SOYADI</label></div>
+      <div class="inputValue">
+        <input id="soyad" type="text" name="soyisim" value="" required />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName"><label>CINSIYET</label></div>
+      <div class="inputValue">
+        <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
+        <label for="erkek">Bay</label>
+
+        <input type="radio" name="cinsiyet" id="kadın" value="kadın" />
+        <label for="kadın">Bayan</label>
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName">
+        <label class="labelName" for="ilce">ILCE</label>
+      </div>
+      <div class="inputValue">
+        <select style="width: 150px" name="ilce" id="ilce">
+          <option value=""></option>
+          <option value="Osmangazi">Osmangazi</option>
+          <option value="Orhangazi">Orhangazi</option>
+          <option value="Tepebasi">Tepebasi</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName"><label for="email">EMAIL</label></div>
+      <div class="inputValue">
+        <input type="email" name="email" id="email" />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName"><label for="site">KISISEL SITE</label></div>
+      <div class="inputValue">
+        <input id="site" type="text" name="site" value="" />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName">
+        <label class="labelName" for="tel">TELEFON</label>
+      </div>
+      <div class="inputValue">
+        <input type="tel" name="tel" id="tel" />
+      </div>
+    </div>
+
+    <div class="divinfo">
+      <div class="labelName">
+        <label class="labelName" for="">HOBILER</label>
+      </div>
+      <div class="inputValue">
+        <div style="display: flex; width: 100px">
+          <div style="margin-right: 20px">
+            <input id="futbol" type="checkbox" name="spor1" value="futbol" />
+          </div>
+          <div><label for="futbol">FUTBOL</label></div>
         </div>
-
-        <div>
-          <label>CİNSİYET</label>
-
-          <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
-          <label for="erkek">Bay</label>
-
-          <input type="radio" name="cinsiyet" id="kadın" value="kadın" />
-          <label for="kadın">Bayan</label>
+        <div style="display: flex; width: 100px">
+          <div style="margin-right: 20px">
+            <input
+              id="voleybol"
+              type="checkbox"
+              name="spor2"
+              value="voleybol"
+            />
+          </div>
+          <div><label for="voleybol">VOLEYBOL</label></div>
         </div>
-        <br />
-
-        <div>
-          <label for="ilce">ILCE</label>
-          <select name="ilce" id="ilce">
-            <option value=""></option>
-            <option value="Osmangazi">Osmangazi</option>
-            <option value="Orhangazi">Orhangazi</option>
-            <option value="Tepebasi">Tepebasi</option>
-          </select>
+        <div style="display: flex; width: 100px">
+          <div style="margin-right: 20px">
+            <input
+              id="basketbol"
+              type="checkbox"
+              name="spor3"
+              value="basketbol"
+            />
+          </div>
+          <div><label for="basketbol">BASKETBOL</label></div>
         </div>
+      </div>
+    </div>
 
-        <br />
+    <div class="divinfo">
+      <div class="labelName"><label for="dosya">PROFIL FOTOGRAFI</label></div>
+      <div class="inputValue">
+        <input type="file" name="dosya" id="dosya" multiple />
+      </div>
+    </div>
 
-        <div>
-          <label for="tel">TELEFON</label>
-          <input type="tel" name="tel" id="tel" />
-        </div>
-        <br />
+    <div class="divinfo">
+      <div class="labelName"><label for="tarih">DOGUM TARİHI</label></div>
+      <div class="inputValue">
+        <input type="date" name="tarih" id="tarih" />
+      </div>
+    </div>
 
-        <div>
-          <label for="">HOBILERIM</label>
-
-          <input
-            id="futbol"
-            type="checkbox"
-            name="spor1"
-            value="futbol"
-          /><br />
-          <label for="futbol">FUTBOL</label>
-
-          <input
-            id="voleybol"
-            type="checkbox"
-            name="spor2"
-            value="voleybol"
-          /><br />
-          <label for="voleybol">VOLEYBOL</label>
-
-          <input
-            id="basketbol"
-            type="checkbox"
-            name="spor3"
-            value="basketbol"
-          /><br />
-          <label for="basketbol">BASKETBOL</label>
-        </div>
-        <br />
-
-        <div>
-          <label for="tarih">DOGUM TARİHI</label>
-          <input type="date" name="tarih" id="tarih" />
-        </div>
-        <br />
-
-        <div>
-          <label for="adres">ADRES</label>
-          <textarea
+    <div class="divinfo">
+      <div class="labelName"><label  for="adres">ADRES</label></div>
+      <div class="inputValue">
+        <textarea
             name="adres"
             id="adres"
             cols="20"
             rows="5"
             style="resize: none"
           ></textarea>
-        </div>
-        <br />
+      </div>
+    </div>
 
-        <div>
-          <input type="button" value="Kayit ol" />
-        </div>
-      </form>
+
+    <div class="divinfo">
+      <div class="labelName"></div>
+      <div class="inputValue">
+        <input type="button" style="height:40px ; width:100px;" value="Kayit ol" />
+      </div>
     </div>
   </body>
 </html>

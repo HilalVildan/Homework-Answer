@@ -1,20 +1,112 @@
-table{
-    /* border-collapse:collapse; */
-    /* border: 1px solid black; */
-}
-
-.liste tr, td{
-    border: 1px solid red;
+*{
+    margin: 0;
+    padding: 0;
 }
 
 
-button{
-    background-color: rgb(238, 115, 115);
-    color: white;
+
+
+
+h1{
+  background-color:purple;
+  float:left;
+  padding:10px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size:20px;
+  position:relative;
+  color: white;
+  width: 100%;
+}
+
+h1:after{
+  content: '';
+  position:absolute;
+  left: 30px;
+  bottom:-9px;
+  border-style: solid;
+  border-top-width: 10px;
+  border-right-width: 25px;
+  border-left-width: 25px;
+  border-top-color:  purple;
+  border-right-color:  transparent;
+  border-bottom-color:  transparent;
+  border-left-color:  transparent;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
     
 }
 
 
+table{
+    width: 90%;
+    /* text-align: center; */
+    /* font-size: 12px; */
+}
+
 i{
+    margin: 0px 2px;
     color: black;
+}
+
+th{
+    background-color: rgba(0, 0, 0, 0.758);
+    color: white;
+}
+
+
+
+.liste tr:nth-child(even){
+    background-color: rgba(169, 169, 169, 0.529);
+}
+
+.liste tr:nth-child(odd){
+    background-color: rgba(169, 169, 169, 0.192);
+}
+
+.liste tr:last-child {
+background-color: rgba(0, 0, 0, 0.758);
+color: white;
+text-align: right;
+
+}
+
+.liste th:nth-child(2){
+    width: 25%;
+    text-align: left;
+}
+
+.liste td:nth-child(3){
+    text-align: center;
+}
+
+
+.liste td:nth-child(5){
+    text-align: right;
+}
+
+button{
+
+    background-color: rgba(255, 68, 0, 0.779);
+    width: 25%;
+    height: 25px;
+    margin-top: 8px;
+    color: white;
+    border: none;
+    
+}
+
+.buttons-box{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 40px;
+    text-align: right;
 }

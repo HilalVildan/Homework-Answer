@@ -1,0 +1,20 @@
+table{
+    /* border-collapse:collapse; */
+    /* border: 1px solid black; */
+}
+
+.liste tr, td{
+    border: 1px solid red;
+}
+
+
+button{
+    background-color: rgb(238, 115, 115);
+    color: white;
+    
+}
+
+
+i{
+    color: black;
+}

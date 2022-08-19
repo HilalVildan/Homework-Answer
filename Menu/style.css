@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+#mySidenav #about {
+  position: absolute;
+  left: -40%;
+  transition: 0.3s;
+  /* padding: 15px; */
+  width: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav #about:hover {
+  left: 0;
+  width: 50%;
+}
+
+#about {
+  /* top: 20px; */
+  background-color: orange;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.202);
+  width: 100%;
+}
+
+h3 {
+  /* height: 15%; */
+  text-align: center;
+  /* height: 12%; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 80%;
+}
+
+ul {
+  color: black;
+  text-align: left;
+  margin-top: 50px;
+  /* border: 1px solid red; */
+  width: 100px;
+  margin-left: 35%;
+  list-style-type: none;
+}
+
+li {
+  /* text-align: left; */
+  margin-top: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 20%;
+}
+
+i {
+  font-size: 50px;
+}
+
+.header .fa-angle-left {
+  display: none;
+}
+
+.header .fa-angle-right {
+  display: inline;
+}
+
+#mySidenav #about:hover .header .fa-angle-left {
+  display: inline;
+}
+#mySidenav #about:hover .header .fa-angle-right {
+  display: none;
+}

@@ -35,6 +35,7 @@
 .nav2 {
     background-color: rgba(128, 128, 128, 0.46);
     height: 70px;
+     margin-top: -25px
 
 }
 
@@ -42,6 +43,7 @@
     font-family: 'Kalam', cursive;
     font-size: 30px;
     padding: 10px;
+   
  
 
 
@@ -49,7 +51,7 @@
 
 .menu2{
     position: absolute;
-    top: 80px;
+    top: 60px;
   right: 10px;
     padding: 20px;
 }
@@ -58,9 +60,18 @@
       text-decoration: none;
     color: black;
     font-weight: 800;
-    margin: 0 0.5rem;
+    
 }
 
 .menu2 a:hover {
   color: white;
+}
+
+.fa-whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    background-color:green;
+    color:white;
+    border-radius: 50%;
 }

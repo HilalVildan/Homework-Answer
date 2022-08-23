@@ -1,43 +1,54 @@
-.search {
-  width: 100%;
-  /* position: relative; */
-  /* display: flex; */
-  
+* {
+  box-sizing: border-box;
 }
 
-
-.searchTerm{
-    border: none;
-    padding: 5px;
-    height: 20px;
-   
+.search{
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-
-.searchButton{
-    border-radius: 5px;
-    border: 2px solid black;
-    background-color: white;
-
+.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
 }
 
-
-/* .searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
+.search button {
+  float: right;
+  width: 10%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  border: none;
   cursor: pointer;
-  font-size: 20px;
-} */ 
-/*Resize the wrap to see the search bar change!*/
-/* .wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+}
+
+
+.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.submit{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.626);
+  height: 50px;
+margin-top: 20px;
+border: 2px solid rgba(0, 0, 0, 0.626);
+border-radius: 50px;
+}
+
+.submit button{
+  height: 46px;
+  width: 90px;
+  border: 1px solid rgba(0, 0, 0, 0.626) ;
+  background-color: orange;
+  border-radius: 50px ;
+  float: right;
+
+}
